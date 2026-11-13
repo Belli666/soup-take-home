@@ -1,0 +1,13 @@
+# Dependencies for Soup Take-Home Task
+# Stack requirement from ТЗ: pip install "soup-cli[train]"
+soup-cli[train]
+
+# Core ML and Verification Libraries
+torch>=2.2.0
+transformers>=4.40.0
+peft>=0.10.0
+accelerate>=0.29.0
+bitsandbytes>=0.43.0
+datasets>=2.18.0
+scipy>=1.12.0
+numpy>=1.24.0

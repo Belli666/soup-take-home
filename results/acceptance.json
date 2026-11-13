@@ -1,0 +1,18 @@
+{
+  "registered_before_test_eval": true,
+  "scenario": "Routing short Russian user queries (Amazon MASSIVE 1.1 ru-RU, 12 frequent intent classes)",
+  "target_runtime": "Transformers + bitsandbytes NF4 on CUDA (NVIDIA T4)",
+  "criteria": {
+    "verifier_adapter_active": true,
+    "verifier_merge_parity": true,
+    "verifier_nf4_reload_valid": true,
+    "negative_controls_rejected": true,
+    "merged_vs_base_min_em_gain_pp": 5.0,
+    "merged_vs_base_paired_95ci_lower_above_zero": true,
+    "nf4_min_valid_format_rate": 0.99,
+    "nf4_min_exact_match": 0.90,
+    "nf4_max_em_drop_vs_merged_pp": 3.0,
+    "reproducible_on_t4_with_headroom": true
+  },
+  "verdict_rule": "SHIP only if ALL criteria pass without unresolved uncertainty; otherwise DON'T SHIP with root-cause stage and next test."
+}

@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "soup",
+    "train",
+    "--config",
+    "soup.yaml",
+    "--yes"
+  ],
+  "elapsed_sec": 393.628,
+  "exit_code": 0,
+  "exception": null,
+  "cuda_available": true,
+  "device_name": "Tesla T4",
+  "max_memory_allocated_bytes": 3708967424,
+  "max_memory_allocated_mib": 3537.15,
+  "max_memory_allocated_gib": 3.4542,
+  "max_memory_reserved_bytes": 6283067392,
+  "max_memory_reserved_mib": 5992.0,
+  "max_memory_reserved_gib": 5.8516
+}

@@ -1,0 +1,51 @@
+{
+  "merged_dir": "artifacts/merged",
+  "nf4_dir": "artifacts/nf4",
+  "elapsed_sec": 10.123,
+  "merged_disk_bytes": 3098893514,
+  "nf4_disk_bytes": 1154754533,
+  "merged_sha256": {
+    "chat_template.jinja": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+    "config.json": "70d2a8b09afa72a5a400406955b1a601f6002127273da969c12a72c2e53d35cb",
+    "generation_config.json": "f6df2a8a694895ce291e3f879d87312a1e6bce119299402d308d803d53300789",
+    "model.safetensors": "756b55f91e53a5a2d3860cf479ea9da4d04a0aad4a2f434823ab5ebbbf62dc41",
+    "tokenizer.json": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8",
+    "tokenizer_config.json": "2e3bd3cb5055f7a903a54e7062b2fd14d21b70f4174c3ffcd9fc81ec50a25631"
+  },
+  "nf4_sha256": {
+    "chat_template.jinja": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+    "config.json": "2c3c09dc0acfa3698c5130e226c1926fc5632fe0699906fc7cca6635ab20bc59",
+    "generation_config.json": "f6df2a8a694895ce291e3f879d87312a1e6bce119299402d308d803d53300789",
+    "model.safetensors": "f7563b25a2afbd327fd977ce58c97dbcbd559304d37c2547370dc206fb337cdf",
+    "tokenizer.json": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8",
+    "tokenizer_config.json": "1cc816812993bff176eb4f7495433b736f06fba9b6e7b05cac7b4a1780650c95"
+  },
+  "bnb_config": {
+    "quant_method": "bitsandbytes",
+    "_load_in_8bit": false,
+    "_load_in_4bit": true,
+    "llm_int8_threshold": 6.0,
+    "llm_int8_skip_modules": null,
+    "llm_int8_enable_fp32_cpu_offload": false,
+    "llm_int8_has_fp16_weight": false,
+    "bnb_4bit_quant_type": "nf4",
+    "bnb_4bit_use_double_quant": true,
+    "bnb_4bit_compute_dtype": "float16",
+    "bnb_4bit_quant_storage": "uint8",
+    "load_in_4bit": true,
+    "load_in_8bit": false
+  },
+  "package_versions": {
+    "torch": "2.14.1+cu130",
+    "transformers": "5.22.1",
+    "bitsandbytes": "0.50.2",
+    "accelerate": "1.15.0"
+  },
+  "note": "Supported Linear layers are quantized to 4-bit NF4; embeddings/lm_head/norms remain FP16.",
+  "cuda_peak": {
+    "max_memory_allocated_bytes": 1179743232,
+    "max_memory_allocated_mib": 1125.09,
+    "max_memory_reserved_bytes": 1201668096,
+    "max_memory_reserved_mib": 1146.0
+  }
+}

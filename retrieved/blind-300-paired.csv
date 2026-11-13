@@ -1,0 +1,301 @@
+idx,topic,id,expected,user_text,base_pred,base_ok,adapter_pred,adapter_ok,merged_pred,merged_ok,nf4_pred,nf4_ok
+0,topic1_work_comms,7317,calendar_set,можешь назначить дом моей сестры как место проведения этого события,calendar_set,1,calendar_set,1,calendar_set,1,calendar_set,1
+1,topic1_work_comms,8430,calendar_remove,отмени все мои встречи,calendar_remove,1,calendar_remove,1,calendar_remove,1,calendar_remove,1
+2,topic1_work_comms,16160,email_sendemail,открой ответить,calendar_query,0,general_quirky,0,general_quirky,0,general_quirky,0
+3,topic1_work_comms,6751,calendar_query,когда моя следующая встреча,calendar_query,1,calendar_query,1,calendar_query,1,calendar_query,1
+4,topic1_work_comms,8289,calendar_set,поставь напоминание про сегодняшнее собрание факультета на четыре,calendar_set,1,calendar_set,1,calendar_set,1,calendar_set,1
+5,topic1_work_comms,16459,email_sendemail,новое сообщение для newmail собака gmail точка com,email_sendemail,1,email_query,0,email_query,0,email_sendemail,1
+6,topic1_work_comms,6761,calendar_remove,удали из моего календаря встречу в девять утра,calendar_remove,1,calendar_remove,1,calendar_remove,1,calendar_remove,1
+7,topic1_work_comms,8044,calendar_query,каково моё расписание на сегодня,calendar_query,1,calendar_query,1,calendar_query,1,calendar_query,1
+8,topic1_work_comms,8890,calendar_set,поставь напоминание,calendar_set,1,calendar_set,1,calendar_set,1,calendar_set,1
+9,topic1_work_comms,16373,email_query,приходили какие нибудь сообщения с трекинговыми номерами,general_quirky,0,email_query,1,email_query,1,email_query,1
+10,topic1_work_comms,15792,calendar_query,с кем я встречаюсь сегодня,calendar_query,1,calendar_query,1,calendar_query,1,calendar_query,1
+11,topic1_work_comms,6789,calendar_set,поставь встречу с женей в субботу в четыре часа дня,calendar_set,1,calendar_set,1,calendar_set,1,calendar_set,1
+12,topic1_work_comms,16437,email_sendemail,пожалуйста отправь это письмо моему другу,email_sendemail,1,email_sendemail,1,email_sendemail,1,email_sendemail,1
+13,topic1_work_comms,7999,calendar_remove,пожалуйста удали родительское собрание запланированное на седьмое марта,calendar_remove,1,calendar_remove,1,calendar_remove,1,calendar_remove,1
+14,topic1_work_comms,1537,datetime_query,покажи текущее время в германии,datetime_query,1,datetime_query,1,datetime_query,1,datetime_query,1
+15,topic1_work_comms,15966,email_query,пошли ответ если это очень важно,calendar_query,0,general_quirky,0,general_quirky,0,general_quirky,0
+16,topic1_work_comms,16873,email_sendemail,напиши наталье и поздравь ее с днем рождения,"Наталья, поздравляю тебя с Днем Рож",0,email_sendemail,1,email_sendemail,1,email_sendemail,1
+17,topic1_work_comms,486,datetime_query,который час в санкт петербурге,datetime_query,1,datetime_query,1,datetime_query,1,datetime_query,1
+18,topic1_work_comms,8602,calendar_query,по какому адресу запланировано мероприятие первого января,calendar_set,0,calendar_query,1,calendar_query,1,calendar_query,1
+19,topic1_work_comms,16266,email_sendemail,написать электронное письмо моей семье сказав что я люблю вас всех,email_sendemail,1,email_sendemail,1,email_sendemail,1,email_sendemail,1
+20,topic1_work_comms,2801,datetime_query,сколько времени в калининграде,weather_query,0,datetime_query,1,datetime_query,1,datetime_query,1
+21,topic1_work_comms,8385,calendar_query,эта неделя неделя зарплаты,calendar_query,1,calendar_query,1,calendar_query,1,calendar_query,1
+22,topic1_work_comms,2412,datetime_query,можешь ли сказать время в калининграде,datetime_query,1,datetime_query,1,datetime_query,1,datetime_query,1
+23,topic1_work_comms,1202,datetime_query,текущее время в санкт-петербурге,datetime_query,1,datetime_query,1,datetime_query,1,datetime_query,1
+24,topic1_work_comms,16072,email_sendemail,напиши иимейл боссу и скажи что я сегодня опоздаю из за непредвиденных обстоятельств я извиняюсь что пропускаю собрание,email_sendemail,1,email_sendemail,1,email_sendemail,1,email_sendemail,1
+25,topic1_work_comms,16730,email_query,проверь есть ли новые письма от андрея,email_query,1,email_query,1,email_query,1,email_query,1
+26,topic1_work_comms,6798,calendar_remove,удали моё следующее событие,calendar_remove,1,calendar_remove,1,calendar_remove,1,calendar_remove,1
+27,topic1_work_comms,7131,calendar_remove,удали свадьбу десятого из моего календаря,calendar_remove,1,calendar_remove,1,calendar_remove,1,calendar_remove,1
+28,topic1_work_comms,16478,email_query,проверить письма от тамары,email_query,1,email_query,1,email_query,1,email_query,1
+29,topic1_work_comms,16462,email_query,какие новые сообщения у меня есть,news_query,0,email_query,1,email_query,1,email_query,1
+30,topic1_work_comms,8409,calendar_remove,удали мой ужин завтра,calendar_remove,1,calendar_remove,1,calendar_remove,1,calendar_remove,1
+31,topic1_work_comms,8729,calendar_set,установи еженедельное напоминание о встрече,calendar_set,1,calendar_set,1,calendar_set,1,calendar_set,1
+32,topic1_work_comms,16945,email_query,какие письма мне пришли,email_query,1,email_query,1,email_query,1,email_query,1
+33,topic1_work_comms,7767,calendar_set,добавь практику в календаре на четвертое февраля в парке зарядье в два часа дня,calendar_add - add event to calendar,0,calendar_set,1,calendar_set,1,calendar_add,0
+34,topic1_work_comms,16248,email_query,пожалуйста проверь мою почту,email_query,1,email_query,1,email_query,1,email_query,1
+35,topic1_work_comms,3720,datetime_query,сколько времени сейчас в зимбабве,weather_query,0,datetime_query,1,datetime_query,1,datetime_query,1
+36,topic1_work_comms,4187,datetime_query,эй siri сколько время,datetime_query,1,datetime_query,1,datetime_query,1,datetime_query,1
+37,topic1_work_comms,16726,email_query,я хочу найти и-мейлы от сергея с темой которая содержит слово совещание,email_query,1,email_query,1,email_query,1,email_query,1
+38,topic1_work_comms,17052,email_query,ищи надежду,general_quirky,0,general_quirky,0,general_quirky,0,general_quirky,0
+39,topic1_work_comms,17147,email_sendemail,ответь на письмо со следующим содержанием привет тебе,email_sendemail,1,email_sendemail,1,email_sendemail,1,email_sendemail,1
+40,topic1_work_comms,16357,email_query,саша писал мне о боеприпасах,general_quirky,0,email_query,1,email_query,1,email_query,1
+41,topic1_work_comms,7654,calendar_set,отметь двадцатое апреля как день рождения моего брата,calendar_set,1,calendar_set,1,calendar_set,1,calendar_set,1
+42,topic1_work_comms,8207,calendar_query,что у меня происходит сегодня утром между десятью и двенадцатью,calendar_query,1,datetime_query,0,datetime_query,0,datetime_query,0
+43,topic1_work_comms,8446,calendar_set,олли напомни мне что я должен быть в библиотеке через неделю в пять,calendar_set,1,calendar_set,1,calendar_set,1,calendar_set,1
+44,topic1_work_comms,6881,calendar_query,когда у меня следующая встреча в календаре,calendar_query,1,calendar_query,1,calendar_query,1,calendar_query,1
+45,topic1_work_comms,8377,calendar_set,напомни мне о календаре,calendar_set,1,calendar_set,1,calendar_set,1,calendar_set,1
+46,topic1_work_comms,7890,calendar_remove,удали стрижку на сегодня,calendar_remove,1,calendar_remove,1,calendar_remove,1,calendar_remove,1
+47,topic1_work_comms,8043,calendar_query,во сколько у меня следующая встреча,weather_query,0,calendar_query,1,calendar_query,1,calendar_query,1
+48,topic1_work_comms,16642,email_query,проверь почту есть ли что-нибудь от тани,email_query,1,email_query,1,email_query,1,email_query,1
+49,topic1_work_comms,8520,calendar_set,добавь запись в приложение календарь,calendar_add,0,calendar_set,1,calendar_set,1,calendar_add,0
+50,topic1_work_comms,7920,calendar_remove,открой календарь удали все события,calendar_remove,1,calendar_remove,1,calendar_remove,1,calendar_remove,1
+51,topic1_work_comms,16294,email_query,прочитай мои непрочитанные имейлы,email_query,1,email_query,1,email_query,1,email_query,1
+52,topic1_work_comms,16032,email_sendemail,пожалуйста отправь письмо саше по поводу завтрашней встречи,email_sendemail,1,email_sendemail,1,email_sendemail,1,email_sendemail,1
+53,topic1_work_comms,3566,datetime_query,какое местное время в челябинске,datetime_query,1,datetime_query,1,datetime_query,1,datetime_query,1
+54,topic1_work_comms,16591,email_sendemail,я только что получил письмо от бори мне надо ответить прямо сейчас,email_sendemail,1,email_sendemail,1,email_sendemail,1,email_sendemail,1
+55,topic1_work_comms,8073,calendar_set,запланировать совещание по продажам на среду в одиннадцать утра,calendar_set,1,calendar_set,1,calendar_set,1,calendar_set,1
+56,topic1_work_comms,7971,calendar_set,установи уведомление за два дня до мероприятия,calendar_set,1,calendar_set,1,calendar_set,1,calendar_set,1
+57,topic1_work_comms,7820,calendar_remove,удали все события в календаре,calendar_remove,1,calendar_remove,1,calendar_remove,1,calendar_remove,1
+58,topic1_work_comms,8089,calendar_set,когда у меня встреча,calendar_query,0,calendar_query,0,calendar_query,0,calendar_query,0
+59,topic1_work_comms,16317,email_query,получил ли я новые и-мейлы от ольги,email_query,1,email_query,1,email_query,1,email_query,1
+60,topic1_work_comms,16375,email_sendemail,составь письмо борису,email_sendemail,1,email_sendemail,1,email_sendemail,1,email_sendemail,1
+61,topic1_work_comms,8562,calendar_remove,удали мою встречу на два часа дня сегодня,calendar_remove,1,calendar_remove,1,calendar_remove,1,calendar_remove,1
+62,topic1_work_comms,16774,email_query,обнови мою электронную почту,email_sendemail,0,email_sendemail,0,email_sendemail,0,email_sendemail,0
+63,topic1_work_comms,6891,calendar_query,есть ли доступные утренние сериалы,calendar_query,1,general_quirky,0,general_quirky,0,general_quirky,0
+64,topic1_work_comms,9008,calendar_remove,убери событие день рождения из моего календаря,calendar_remove,1,calendar_remove,1,calendar_remove,1,calendar_remove,1
+65,topic1_work_comms,7355,calendar_set,напомни мне проверить рагу в шесть часов,weather_query,0,calendar_set,1,calendar_set,1,calendar_set,1
+66,topic1_work_comms,16518,email_sendemail,добавь новый и-мейл для юлии кузнецовой,email_add_new — добавить нового адреса электронной почты,0,email_sendemail,1,email_sendemail,1,email_sendemail,1
+67,topic1_work_comms,229,datetime_query,сколько времени в туле,weather_query,0,datetime_query,1,datetime_query,1,datetime_query,1
+68,topic1_work_comms,2927,datetime_query,который час в воркуте,datetime_query,1,datetime_query,1,datetime_query,1,datetime_query,1
+69,topic1_work_comms,86,datetime_query,какая сегодня дата,datetime_query,1,datetime_query,1,datetime_query,1,datetime_query,1
+70,topic1_work_comms,16533,email_sendemail,поможешь ли ты мне написать электронное письмо светлане,email_sendemail,1,email_sendemail,1,email_sendemail,1,email_sendemail,1
+71,topic1_work_comms,8800,calendar_query,есть ли у меня какие либо напоминания в моём списке,calendar_query,1,calendar_query,1,calendar_query,1,calendar_query,1
+72,topic1_work_comms,9187,calendar_set,изучить клиентов которые придут на встречу,calendar_query,0,calendar_query,0,calendar_query,0,calendar_query,0
+73,topic1_work_comms,16401,email_sendemail,набери и-мейл даше эй что ты делаешь сегодня,email_query,0,email_sendemail,1,email_sendemail,1,email_sendemail,1
+74,topic1_work_comms,5757,datetime_query,без четверти два,datetime_query,1,datetime_query,1,datetime_query,1,datetime_query,1
+75,topic1_work_comms,7777,calendar_query,у меня сегодня есть какая-то встреча,calendar_query,1,calendar_query,1,calendar_query,1,calendar_query,1
+76,topic1_work_comms,15805,email_sendemail,напиши дмитрию о встрече завтра дмитрий давай встретимся завтра после обеда,calendar_set,0,email_sendemail,1,email_sendemail,1,email_sendemail,1
+77,topic1_work_comms,8985,calendar_remove,окей google удали день рождения саши из календаря,calendar_remove,1,calendar_remove,1,calendar_remove,1,calendar_remove,1
+78,topic1_work_comms,9095,calendar_remove,удали сегодняшний ужин с сашей,calendar_remove,1,calendar_remove,1,calendar_remove,1,calendar_remove,1
+79,topic1_work_comms,8904,calendar_query,информация о недавних событиях,calendar_query,1,calendar_query,1,calendar_query,1,calendar_query,1
+80,topic1_work_comms,6831,calendar_remove,удали все события в следующие пять дней,calendar_remove,1,calendar_remove,1,calendar_remove,1,calendar_remove,1
+81,topic1_work_comms,7570,calendar_query,какой сегодня план,calendar_query,1,calendar_query,1,calendar_query,1,calendar_query,1
+82,topic1_work_comms,17034,email_query,перечисли все мои недавние письма,email_query,1,email_query,1,email_query,1,email_query,1
+83,topic1_work_comms,16768,email_sendemail,открыть электронное письмо от татьяны,email_sendemail,1,email_sendemail,1,email_sendemail,1,email_sendemail,1
+84,topic1_work_comms,8261,calendar_set,отправь мне предупреждение за час до моей следующей встречи,calendar_set,1,calendar_set,1,calendar_set,1,calendar_set,1
+85,topic1_work_comms,16916,email_sendemail,ответь на письмо которое я получил,email_query,0,email_sendemail,1,email_sendemail,1,email_sendemail,1
+86,topic1_work_comms,8933,calendar_query,на когда запланирована вечеринка,calendar_query,1,calendar_query,1,calendar_query,1,calendar_query,1
+87,topic1_work_comms,8853,calendar_remove,очисти моё следующее действие,calendar_remove,1,general_quirky,0,general_quirky,0,general_quirky,0
+88,topic1_work_comms,3744,datetime_query,дай мне узнать время,datetime_query,1,datetime_query,1,datetime_query,1,datetime_query,1
+89,topic1_work_comms,16085,email_sendemail,письмо жене васильеву,email_sendemail,1,email_sendemail,1,email_sendemail,1,email_sendemail,1
+90,topic1_work_comms,16386,email_query,эй проверь электронную почту,email_query,1,email_query,1,email_query,1,email_query,1
+91,topic1_work_comms,8276,calendar_remove,удали мою следующую встречу пожалуйста,calendar_remove,1,calendar_remove,1,calendar_remove,1,calendar_remove,1
+92,topic1_work_comms,10772,calendar_remove,удали приём у стоматолога из сегодняшнего расписания,calendar_remove,1,calendar_remove,1,calendar_remove,1,calendar_remove,1
+93,topic1_work_comms,8619,calendar_set,установи событие для пятнадцатого числа каждого месяца чтобы напомнить мне оплатить счёт за интернет,calendar_set,1,calendar_set,1,calendar_set,1,calendar_set,1
+94,topic1_work_comms,6779,calendar_query,у меня что-нибудь запланировано на завтра,calendar_query,1,calendar_query,1,calendar_query,1,calendar_query,1
+95,topic1_work_comms,3721,datetime_query,алиса сколько времени сейчас в тюмени,datetime_query,1,datetime_query,1,datetime_query,1,datetime_query,1
+96,topic1_work_comms,9069,calendar_query,у меня есть встреча на следующей неделе,calendar_query,1,calendar_query,1,calendar_query,1,calendar_query,1
+97,topic1_work_comms,16892,email_sendemail,начни письмо ивану самойлову,"Иван, у тебя сегодня какие планы?",0,email_sendemail,1,email_sendemail,1,email_sendemail,1
+98,topic1_work_comms,4772,datetime_query,скажи мне время в этой временной зоне,datetime_query,1,datetime_query,1,datetime_query,1,datetime_query,1
+99,topic1_work_comms,2824,datetime_query,какой день тринадцатого декабря,datetime_query,1,datetime_query,1,datetime_query,1,datetime_query,1
+100,topic2_media_facts,9506,play_radio,olly давай послушаем европу плюс,play_radio,1,play_radio,1,play_radio,1,play_radio,1
+101,topic2_media_facts,5016,news_query,расскажи мне новости о взлетах и падениях рынка акций,news_query,1,news_query,1,news_query,1,news_query,1
+102,topic2_media_facts,9620,play_radio,могу я послушать равные среди первых по радио в спальне,radio_set,0,play_radio,1,play_radio,1,play_radio,1
+103,topic2_media_facts,826,weather_query,какая температура сейчас на улице,weather_query,1,weather_query,1,weather_query,1,weather_query,1
+104,topic2_media_facts,5401,play_music,музыка,play_music,1,play_music,1,play_music,1,play_music,1
+105,topic2_media_facts,1430,play_music,найди и добавь в очередь все песни светланы лободы и играй без перетасовки,play_music,1,play_music,1,play_music,1,play_music,1
+106,topic2_media_facts,100,weather_query,какой прогноз на эту неделю,weather_query,1,weather_query,1,weather_query,1,weather_query,1
+107,topic2_media_facts,3602,news_query,какие последние новости о выборах в соединённых штатах,news_query,1,news_query,1,news_query,1,news_query,1
+108,topic2_media_facts,4117,play_music,можешь включить мне какую-нибудь танцевальную музыку,play_music,1,play_music,1,play_music,1,play_music,1
+109,topic2_media_facts,4376,weather_query,как там сегодня на улице,weather_query,1,weather_query,1,weather_query,1,weather_query,1
+110,topic2_media_facts,6319,general_quirky,думаешь стоит пойти в театр сегодня,calendar_query,0,calendar_query,0,calendar_query,0,general_quirky,1
+111,topic2_media_facts,1467,play_music,включи клава кока,play_music,1,play_music,1,play_music,1,play_radio,0
+112,topic2_media_facts,1513,weather_query,сколько градусов на улице,weather_query,1,weather_query,1,weather_query,1,weather_query,1
+113,topic2_media_facts,1692,play_music,найди легкий джаз,calendar_query,0,music_play,0,music_play,0,general_quirky,0
+114,topic2_media_facts,13798,qa_factoid,сколько квадратных миль занимает средняя страна на земле,1036.79,0,qa_factoid,1,qa_factoid,1,general_quirky,0
+115,topic2_media_facts,13330,qa_factoid,какого размера кашалот,general_quirky,0,qa_factoid,1,qa_factoid,1,general_quirky,0
+116,topic2_media_facts,5347,play_music,включи техно музыку,play_music,1,play_music,1,play_music,1,play_music,1
+117,topic2_media_facts,9375,play_radio,включи европа плюс,play_radio,1,play_radio,1,play_radio,1,play_radio,1
+118,topic2_media_facts,3041,news_query,olly трендовые темы в новостях,news_query,1,news_query,1,news_query,1,news_query,1
+119,topic2_media_facts,3868,news_query,какой заголовок в московском комсомольце,"Сегодня в Москве: погода, новости и актуальные события",0,news_query,1,news_query,1,general_quirky,0
+120,topic2_media_facts,5189,weather_query,какая погода вероятнее будет сегодня в моём районе,weather_query,1,weather_query,1,weather_query,1,weather_query,1
+121,topic2_media_facts,6473,general_quirky,погода сегодня была плохая,weather_query,0,weather_query,0,weather_query,0,weather_query,0
+122,topic2_media_facts,6195,general_quirky,о чем думаешь,general_quirky,1,general_quirky,1,general_quirky,1,general_quirky,1
+123,topic2_media_facts,4031,play_music,включи проклятый старый дом,play_radio,0,play_radio,0,play_radio,0,play_radio,0
+124,topic2_media_facts,3406,weather_query,какой прогноз на десять дней,weather_query,1,weather_query,1,weather_query,1,weather_query,1
+125,topic2_media_facts,6496,general_quirky,новые гаджеты,news_query,0,news_query,0,news_query,0,news_query,0
+126,topic2_media_facts,4960,play_music,музыка король и шут,play_music,1,play_music,1,play_music,1,play_music,1
+127,topic2_media_facts,5236,play_music,включи мой плейлист для тренажёрного зала,play_music,1,play_music,1,play_music,1,play_music,1
+128,topic2_media_facts,1334,weather_query,очень жарко сегодня не так ли,weather_query,1,weather_query,1,weather_query,1,weather_query,1
+129,topic2_media_facts,14457,qa_factoid,найди маршрут,directions_query,0,general_quirky,0,general_quirky,0,general_quirky,0
+130,topic2_media_facts,1007,play_music,включи сплин из моего рок плейлиста,play_music,1,play_music,1,play_music,1,play_radio,0
+131,topic2_media_facts,5382,news_query,какие новости в ирландии,news_query,1,news_query,1,news_query,1,news_query,1
+132,topic2_media_facts,3264,play_music,воспроизведи музыку регги,play_music,1,play_music,1,play_music,1,play_music,1
+133,topic2_media_facts,9280,play_radio,настрой пожалуйста радиостанцию,play_radio,1,play_radio,1,play_radio,1,play_radio,1
+134,topic2_media_facts,9317,play_radio,запусти радио радио рекорд,play_radio,1,play_radio,1,play_radio,1,play_radio,1
+135,topic2_media_facts,9391,play_radio,пожалуйста открыть мою ф. м. радиостанцию и проиграть девятьсот восемьдесят семь,play_radio,1,play_radio,1,play_radio,1,play_radio,1
+136,topic2_media_facts,219,weather_query,мне взять зонт завтра,weather_query,1,weather_query,1,weather_query,1,general_quirky,0
+137,topic2_media_facts,9250,play_radio,слушать радио,radio_start,0,play_radio,1,play_radio,1,play_radio,1
+138,topic2_media_facts,1016,news_query,какие заголовки из аргументов и фактах,weather_query,0,qa_factoid,0,qa_factoid,0,qa_factoid,0
+139,topic2_media_facts,5638,weather_query,надо ли мне купить немного соли для плавления льда в магазине,calendar_query,0,general_quirky,0,general_quirky,0,general_quirky,0
+140,topic2_media_facts,6322,general_quirky,пожалуйста скажи мне какой счет игры,calendar_query,0,general_quirky,1,general_quirky,1,general_quirky,1
+141,topic2_media_facts,4823,weather_query,прогноз на десять дней,weather_query,1,weather_query,1,weather_query,1,weather_query,1
+142,topic2_media_facts,4402,weather_query,мне сегодня взять с собой зонтик,weather_query,1,weather_query,1,weather_query,1,general_quirky,0
+143,topic2_media_facts,5561,news_query,прочитай мне новости за день,news_query,1,news_query,1,news_query,1,news_query,1
+144,topic2_media_facts,2638,news_query,покажи мне новости о жириновском,news_query,1,news_query,1,news_query,1,news_query,1
+145,topic2_media_facts,13997,qa_factoid,сколько стоит средний дом,price_average_house,0,qa_factoid,1,qa_factoid,1,general_quirky,0
+146,topic2_media_facts,9216,play_radio,включи мою станцию,play_radio,1,play_radio,1,play_radio,1,play_radio,1
+147,topic2_media_facts,99,weather_query,какой прогноз на неделю,weather_query,1,weather_query,1,weather_query,1,weather_query,1
+148,topic2_media_facts,2588,news_query,какие последние новости на р. и. а. новости пожалуйста,news_query,1,news_query,1,news_query,1,news_query,1
+149,topic2_media_facts,5578,weather_query,зимой утром мне нужны тёплые носки,calendar_query,0,general_quirky,0,general_quirky,0,general_quirky,0
+150,topic2_media_facts,13051,qa_factoid,из какого штата дэвид линч,california,0,qa_factoid,1,qa_factoid,1,qa_factoid,1
+151,topic2_media_facts,9519,play_radio,включи любую станцию поп ф м,play_radio,1,play_radio,1,play_radio,1,play_radio,1
+152,topic2_media_facts,9577,play_radio,смени станцию на сто семь и восемь,play_radio,1,play_radio,1,play_radio,1,play_radio,1
+153,topic2_media_facts,9528,play_radio,включи европу плюс и воспроизведи на моих динамиках,play_radio,1,play_radio,1,play_radio,1,play_radio,1
+154,topic2_media_facts,14053,qa_factoid,в каком году начал сниматься александр абдулов,2013,0,qa_factoid,1,qa_factoid,1,qa_factoid,1
+155,topic2_media_facts,14553,general_quirky,скажи мне глобальное потепление это правда,false,0,qa_factoid,0,qa_factoid,0,general_quirky,1
+156,topic2_media_facts,5565,news_query,илья и максим снова вместе,calendar_query,0,general_quirky,0,general_quirky,0,general_quirky,0
+157,topic2_media_facts,6438,general_quirky,я сегодня всё обыскал но не смог найти свой телефон,general_quirky,1,general_quirky,1,general_quirky,1,general_quirky,1
+158,topic2_media_facts,14683,qa_factoid,чем увлекается аджай девган,general_quirky,0,qa_factoid,1,qa_factoid,1,general_quirky,0
+159,topic2_media_facts,13533,general_quirky,где сейчас моя девушка,weather_query,0,email_query,0,email_query,0,email_query,0
+160,topic2_media_facts,9204,play_radio,вруби радио европа плюс,radio_set - включить радио,0,play_radio,1,play_radio,1,play_radio,1
+161,topic2_media_facts,2386,news_query,дай мне последние новости,news_query,1,news_query,1,news_query,1,news_query,1
+162,topic2_media_facts,6663,general_quirky,места для отдыха,calendar_query,0,general_quirky,1,general_quirky,1,general_quirky,1
+163,topic2_media_facts,216,weather_query,как там погода сегодня,weather_query,1,weather_query,1,weather_query,1,weather_query,1
+164,topic2_media_facts,4377,weather_query,какая сейчас погода,weather_query,1,weather_query,1,weather_query,1,weather_query,1
+165,topic2_media_facts,6293,general_quirky,olly я встретил одного из моих старых одноклассников сегодня,calendar_query,0,general_quirky,1,general_quirky,1,general_quirky,1
+166,topic2_media_facts,14316,qa_factoid,насколько велика аляска,weather_query,0,qa_factoid,1,qa_factoid,1,general_quirky,0
+167,topic2_media_facts,6050,weather_query,мне потребуется крем от загара позже,calendar_query,0,qa_factoid,0,qa_factoid,0,general_quirky,0
+168,topic2_media_facts,1180,news_query,найди сегодняшние статьи о путине на лента ру,news_query,1,news_query,1,news_query,1,news_query,1
+169,topic2_media_facts,517,play_music,включи мою любимую песню,play_music,1,play_music,1,play_music,1,play_music,1
+170,topic2_media_facts,4119,news_query,я хочу знать все о прорыве дамбы в якутии,news_query,1,news_query,1,news_query,1,news_query,1
+171,topic2_media_facts,9617,play_radio,поставь мне сегодняшнее утреннее шоу со сто один и девять,calendar_query,0,general_quirky,0,general_quirky,0,general_quirky,0
+172,topic2_media_facts,9358,play_radio,запусти радиоканал сто три точка четыре,play_radio,1,play_radio,1,play_radio,1,play_radio,1
+173,topic2_media_facts,13888,qa_factoid,какая температура в барнауле алтайский край,weather_query,0,weather_query,0,weather_query,0,weather_query,0
+174,topic2_media_facts,41,general_quirky,хочу узнать статус яркости моего экрана,weather_query,0,general_quirky,1,general_quirky,1,general_quirky,1
+175,topic2_media_facts,13616,qa_factoid,где тусуются большинство звёзд,general_quirky,0,qa_factoid,1,qa_factoid,1,general_quirky,0
+176,topic2_media_facts,711,news_query,прочитай последние заголовки из санкт-петербургских ведомостей,news_query,1,news_query,1,news_query,1,news_query,1
+177,topic2_media_facts,392,play_music,включи песню из моих избранных,play_music,1,play_music,1,play_music,1,play_music,1
+178,topic2_media_facts,185,play_music,включи мой плейлист и воспроизведи третью песню в очереди,play_music,1,play_music,1,play_music,1,play_radio,0
+179,topic2_media_facts,4001,news_query,что случилось с ходячими мертвецами,qa_factoid,0,news_query,1,news_query,1,news_query,1
+180,topic2_media_facts,2562,play_music,включи музыку из плейлиста для тренировок,play_music,1,play_music,1,play_music,1,play_music,1
+181,topic2_media_facts,776,news_query,скажите мне произойдет ли в мире землетрясение,weather_query,0,news_query,1,news_query,1,general_quirky,0
+182,topic2_media_facts,9253,play_radio,эльдорадио,play_radio,1,play_radio,1,play_radio,1,play_radio,1
+183,topic2_media_facts,14706,qa_factoid,где живет софия вергара,general_quirky,0,qa_factoid,1,qa_factoid,1,general_quirky,0
+184,topic2_media_facts,13681,qa_factoid,во скольких спектаклях играл дмитрий нагиев,calendar_query,0,qa_factoid,1,qa_factoid,1,general_quirky,0
+185,topic2_media_facts,2085,play_music,alexa я бы послушал любую классику кроме глинки и свиридова,calendar_remove,0,play_music,1,play_music,1,general_quirky,0
+186,topic2_media_facts,9562,play_radio,можешь пожалуйста воспроизвести эту программу для меня,calendar_query,0,play_music,0,play_music,0,general_quirky,0
+187,topic2_media_facts,6578,general_quirky,любовь,love,0,general_quirky,1,general_quirky,1,general_quirky,1
+188,topic2_media_facts,14011,qa_factoid,когда день рождение жанны агузаровой,calendar_query,0,calendar_query,0,calendar_query,0,qa_factoid,1
+189,topic2_media_facts,9127,qa_factoid,где расположен конференц-центр,general_quirky,0,general_quirky,0,general_quirky,0,general_quirky,0
+190,topic2_media_facts,15100,qa_factoid,как далеко,distance_query,0,distance_query,0,distance_query,0,general_quirky,0
+191,topic2_media_facts,6194,weather_query,как сегодня погода,weather_query,1,weather_query,1,weather_query,1,weather_query,1
+192,topic2_media_facts,5683,play_music,включи мой плейлист песни для вечеринок,play_music,1,play_music,1,play_music,1,play_music,1
+193,topic2_media_facts,13867,qa_factoid,где находится парк горького,general_quirky,0,qa_factoid,1,qa_factoid,1,general_quirky,0
+194,topic2_media_facts,13892,general_quirky,мне нужно занять двух малышей скажи мне что делать,play_radio,0,general_quirky,1,general_quirky,1,general_quirky,1
+195,topic2_media_facts,6382,general_quirky,эй что интересного происходит в спорте в последнее время,news_query,0,news_query,0,news_query,0,news_query,0
+196,topic2_media_facts,295,news_query,скажи мне заголовки сегодняшних газет,news_query,1,news_query,1,news_query,1,news_query,1
+197,topic2_media_facts,6241,general_quirky,я сегодня помог попрошайке olly,calendar_query,0,general_quirky,1,general_quirky,1,general_quirky,1
+198,topic2_media_facts,13618,general_quirky,скажи что я могу сделать чтобы помочь своему сообществу сегодня,calendar_query,0,general_quirky,1,general_quirky,1,general_quirky,1
+199,topic2_media_facts,14617,qa_factoid,когда поженились пугачёва и галкин,general_quirky,0,qa_factoid,1,qa_factoid,1,general_quirky,0
+200,topic3_unseen_daily,14648,cooking_recipe,рецепт пожалуйста,cooking_recipe,1,cook_book_search,0,cook_book_search,0,cook_recipe,0
+201,topic3_unseen_daily,1209,cooking_recipe,ты можешь мне предложить какое-нибудь здоровое блюдо на ужин,cooking_recipe,1,takeaway_order,0,takeaway_order,0,cook_recipe,0
+202,topic3_unseen_daily,11,iot_hue_lightoff,выключи свет пожалуйста,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1
+203,topic3_unseen_daily,5336,alarm_query,скажи мне на какое время установлены будильники,alarm_query,1,alarm_query,1,alarm_query,1,alarm_query,1
+204,topic3_unseen_daily,12264,transport_query,екатеринбург,transport_query,1,transport_query,1,transport_query,1,transport_query,1
+205,topic3_unseen_daily,4088,iot_hue_lightoff,выключи верхний свет,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1
+206,topic3_unseen_daily,15015,transport_query,как далеко москва от японии,10738 км,0,transport_query,1,transport_query,1,transport_query,1
+207,topic3_unseen_daily,885,alarm_set,установи будильник на восемь утра,alarm_set,1,alarm_set,1,alarm_set,1,alarm_set,1
+208,topic3_unseen_daily,9996,cooking_recipe,какая самая соблазнительная еда чтобы приготовить на свидание,cooking_recipe,1,cookining_recipe,0,cookining_recipe,0,cook_recipe,0
+209,topic3_unseen_daily,2673,alarm_query,не забыл ли я поставить напоминание для следующей записи к врачу,alarm_set,0,alarm_set,0,alarm_set,0,alarm_set,0
+210,topic3_unseen_daily,10220,cooking_recipe,какие продукты нужны чтобы испечь большой торт,pie_baking_ingredients,0,cookining_recipe,0,cookining_recipe,0,cook_recipe,0
+211,topic3_unseen_daily,12437,transport_query,сколько времени нужно чтобы добраться до театра,transport_query,1,transport_query,1,transport_query,1,transport_query,1
+212,topic3_unseen_daily,999,iot_hue_lightoff,ты можешь выключить свет,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1
+213,topic3_unseen_daily,12932,transport_query,olly как мне доехать до улицы большая зеленина,transport_query,1,transport_query,1,transport_query,1,transport_query,1
+214,topic3_unseen_daily,9969,cooking_recipe,что можно использовать вместо шафрана,salt,0,cooking_recipe,1,cooking_recipe,1,cooking_recipe,1
+215,topic3_unseen_daily,3162,alarm_query,покажи мне будильники которые я завел,alarm_query,1,alarm_query,1,alarm_query,1,alarm_query,1
+216,topic3_unseen_daily,89,takeaway_order,можешь заказать суши на ужин сегодня вечером,takeaway_order,1,takeaway_order,1,takeaway_order,1,takeaway_order,1
+217,topic3_unseen_daily,12505,transport_query,когда следующий поезд р ж д в екатеринбург,transport_query,1,transport_query,1,transport_query,1,transport_query,1
+218,topic3_unseen_daily,12759,transport_query,время в пути до москвы,transport_query,1,transport_query,1,transport_query,1,transport_query,1
+219,topic3_unseen_daily,5084,alarm_set,установи будильник на шесть утра,alarm_set,1,alarm_set,1,alarm_set,1,alarm_set,1
+220,topic3_unseen_daily,4130,alarm_query,установлен ли мой будильник на занятие танцами,alarm_query,1,alarm_query,1,alarm_query,1,alarm_query,1
+221,topic3_unseen_daily,12818,transport_query,сколько стоит билет на поезд в москву,transport_query,1,transport_query,1,transport_query,1,transport_query,1
+222,topic3_unseen_daily,5867,alarm_query,скажи мне о времени на будильниках,alarm_query,1,alarm_query,1,alarm_query,1,alarm_query,1
+223,topic3_unseen_daily,6112,takeaway_order,эй закажи две порции крылышек с картошкой фри из суши вок,takeaway_order,1,takeaway_order,1,takeaway_order,1,takeaway_order,1
+224,topic3_unseen_daily,5202,iot_hue_lightoff,будь добр выключи свет в зале для рисования,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1
+225,topic3_unseen_daily,1516,takeaway_order,закажи пиццу с колбасками в доминос пицце,takeaway_order,1,takeaway_order,1,takeaway_order,1,takeaway_order,1
+226,topic3_unseen_daily,884,alarm_set,поставь будильник на восемь утра,alarm_set,1,alarm_set,1,alarm_set,1,alarm_set,1
+227,topic3_unseen_daily,6403,transport_query,как добраться куда-то,transport_query,1,transport_query,1,transport_query,1,transport_query,1
+228,topic3_unseen_daily,1830,takeaway_order,хочу съесть чего нибудь острого,cooking_recipe,0,cookining_recipe,0,cookining_recipe,0,cook_recipe,0
+229,topic3_unseen_daily,10097,cooking_recipe,я бы хотела чизбургер,takeaway_order,0,takeaway_order,0,takeaway_order,0,cook_recipe,0
+230,topic3_unseen_daily,12185,transport_query,где находится железнодорожная станция,transport_query,1,transport_query,1,transport_query,1,transport_query,1
+231,topic3_unseen_daily,4121,alarm_query,на какое время ты поставил будильник,alarm_set,0,alarm_query,1,alarm_query,1,alarm_set,0
+232,topic3_unseen_daily,1914,alarm_set,предупреди меня в пять часов,alarm_set,1,alarm_set,1,alarm_set,1,alarm_set,1
+233,topic3_unseen_daily,10157,cooking_recipe,найди рецепт спагетти,cooking_recipe,1,cook_spaghetti_recipe,0,cook_spaghetti_recipe,0,cook_spaghetti_routine,0
+234,topic3_unseen_daily,12741,transport_query,по какой улице мне пойти чтобы попасть в центр города,transport_query,1,transport_query,1,transport_query,1,transport_query,1
+235,topic3_unseen_daily,2480,takeaway_order,позвони чтобы сделать заказ навынос,takeaway_order,1,takeaway_order,1,takeaway_order,1,takeaway_order,1
+236,topic3_unseen_daily,0,alarm_set,разбуди меня в пять утра на этой неделе,alarm_set,1,alarm_set,1,alarm_set,1,alarm_set,1
+237,topic3_unseen_daily,2710,iot_hue_lightoff,отключи ток,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1
+238,topic3_unseen_daily,1043,takeaway_order,позвони в ближайший тайский ресторан с доставкой,takeaway_order,1,takeaway_order,1,takeaway_order,1,takeaway_order,1
+239,topic3_unseen_daily,12504,transport_query,во сколько отправляется поезд из москвы,transport_query,1,transport_query,1,transport_query,1,transport_query,1
+240,topic3_unseen_daily,3843,takeaway_order,закажи мне китайскую еду,takeaway_order,1,takeaway_order,1,takeaway_order,1,takeaway_order,1
+241,topic3_unseen_daily,5982,alarm_query,на какое время ты для меня поставил будильник,alarm_set,0,alarm_query,1,alarm_query,1,alarm_set,0
+242,topic3_unseen_daily,3704,takeaway_order,закажи две большие пиццы и горячие крылышки в dominoes,takeaway_order,1,takeaway_order,1,takeaway_order,1,takeaway_order,1
+243,topic3_unseen_daily,14465,transport_query,маршрут до додо пицца,transport_query,1,transport_query,1,transport_query,1,transport_query,1
+244,topic3_unseen_daily,1658,alarm_query,я хочу увидеть все заведенные будильники,alarm_query,1,alarm_query,1,alarm_query,1,alarm_query,1
+245,topic3_unseen_daily,2246,iot_hue_lightoff,выключи свет в шкафу,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1
+246,topic3_unseen_daily,6542,cooking_recipe,мягкий сыр лучше чем твёрдый,cooking_recipe,1,cooking_recipe,1,cooking_recipe,1,transport_query,0
+247,topic3_unseen_daily,1210,takeaway_order,закажи еду из хорошего ресторана,takeaway_order,1,takeaway_order,1,takeaway_order,1,takeaway_order,1
+248,topic3_unseen_daily,1483,alarm_query,какие будильники я завел,alarm_query,1,alarm_query,1,alarm_query,1,alarm_query,1
+249,topic3_unseen_daily,12343,transport_query,проверь время десять тысяч восемьсот восемьдесят седьмого поезда со станции международная во вторник,transport_query,1,transport_query,1,transport_query,1,transport_query,1
+250,topic3_unseen_daily,3785,iot_hue_lightoff,выключи свет в ванной пожалуйста,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1
+251,topic3_unseen_daily,8731,alarm_set,поставить повторяющийся будильник на facebook событие на котором я должен присутствовать седьмого апреля,alarm_set,1,alarm_set,1,alarm_set,1,alarm_set,1
+252,topic3_unseen_daily,19,iot_hue_lightoff,olly выключи свет в спальне,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1
+253,topic3_unseen_daily,4930,alarm_set,включи будильник на три тридцать дня сегодня,alarm_set,1,alarm_set,1,alarm_set,1,alarm_set,1
+254,topic3_unseen_daily,3213,alarm_set,установи новый будильник на это время,alarm_set,1,alarm_set,1,alarm_set,1,alarm_set,1
+255,topic3_unseen_daily,3149,alarm_query,у меня есть какие нибудь будильники на завтрашнее утро,alarm_query,1,alarm_query,1,alarm_query,1,alarm_query,1
+256,topic3_unseen_daily,4318,alarm_set,разбуди меня в десять,alarm_set,1,alarm_set,1,alarm_set,1,alarm_set,1
+257,topic3_unseen_daily,5243,iot_hue_lightoff,siri выключи свет в ванной,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1
+258,topic3_unseen_daily,3993,iot_hue_lightoff,погаси свет,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1
+259,topic3_unseen_daily,1377,iot_hue_lightoff,пожалуйста выключи свет в комнате моего сына,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1
+260,topic3_unseen_daily,861,alarm_query,мои установленные будильники,alarm_query,1,alarm_query,1,alarm_query,1,alarm_query,1
+261,topic3_unseen_daily,4338,takeaway_order,покажи доставки рядом со мной,takeaway_order,1,transport_query,0,transport_query,0,transport_query,0
+262,topic3_unseen_daily,1784,iot_hue_lightoff,выключи в столовой,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1
+263,topic3_unseen_daily,3080,takeaway_order,время для вредной еды,takeaway_order,1,alarm_query,0,alarm_query,0,cook_recipe,0
+264,topic3_unseen_daily,6111,takeaway_order,эй olly закажи крылышки с картошкой фри из суши вок,takeaway_order,1,takeaway_order,1,takeaway_order,1,takeaway_order,1
+265,topic3_unseen_daily,1646,alarm_query,есть ли какие нибудь будильники которые сработают сегодня,alarm_query,1,alarm_query,1,alarm_query,1,alarm_query,1
+266,topic3_unseen_daily,3835,takeaway_order,я хочу заказать китайскую еду на вынос,takeaway_order,1,takeaway_order,1,takeaway_order,1,takeaway_order,1
+267,topic3_unseen_daily,6055,iot_hue_lightoff,оставил ли я свет в гараже включенным,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1
+268,topic3_unseen_daily,12828,transport_query,покажи все поезда и время в москву,transport_query,1,transport_query,1,transport_query,1,transport_query,1
+269,topic3_unseen_daily,10078,cooking_recipe,что мне приготовить на ужин,cooking_recipe,1,takeaway_order,0,takeaway_order,0,cook_recipe,0
+270,topic3_unseen_daily,12247,transport_query,какие следующие четыре поезда по расписанию до санкт петербурга,transport_query,1,transport_query,1,transport_query,1,transport_query,1
+271,topic3_unseen_daily,10162,cooking_recipe,открой рецепт фрикаделек из индейки,cooking_recipe,1,cook_recipe,0,cook_recipe,0,cook_recipe,0
+272,topic3_unseen_daily,1913,alarm_set,разбуди меня в пять утра,alarm_set,1,alarm_set,1,alarm_set,1,alarm_set,1
+273,topic3_unseen_daily,10210,cooking_recipe,больше нет комментариев,alarm_query,0,transport_query,0,transport_query,0,alarm_query,0
+274,topic3_unseen_daily,5902,alarm_query,проверить если будильник установлен на шесть утра,alarm_query,1,alarm_query,1,alarm_query,1,alarm_query,1
+275,topic3_unseen_daily,12908,transport_query,во сколько поезд прибывает в мурманск,transport_query,1,transport_query,1,transport_query,1,transport_query,1
+276,topic3_unseen_daily,2338,takeaway_order,закажи одну упаковку лапши на вынос,takeaway_order,1,takeaway_order,1,takeaway_order,1,takeaway_order,1
+277,topic3_unseen_daily,3761,alarm_set,разбуди меня в восемь утра,alarm_set,1,alarm_set,1,alarm_set,1,alarm_set,1
+278,topic3_unseen_daily,3386,iot_hue_lightoff,убавь delet свет до среднего,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1
+279,topic3_unseen_daily,1038,alarm_query,мой школьный будильник заведен,alarm_set,0,alarm_set,0,alarm_set,0,alarm_set,0
+280,topic3_unseen_daily,536,alarm_set,заведи будильник на три часа дня,alarm_set,1,alarm_set,1,alarm_set,1,alarm_set,1
+281,topic3_unseen_daily,10216,cooking_recipe,поищи в интернете для покупки формочки для выпекания маффинов,search_internet_for_muffin_formettes_purchase,0,search_web_for_muffin_formettes,0,search_web_for_muffin_formettes,0,search_web_for_muffin_formettes,0
+282,topic3_unseen_daily,3094,iot_hue_lightoff,выключить освещение,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1
+283,topic3_unseen_daily,10138,cooking_recipe,покажи мне как приготовить рецепт,cooking_recipe,1,cook_recipe,0,cook_recipe,0,cook_recipe,0
+284,topic3_unseen_daily,2334,alarm_set,добавь будильник на завтра в шесть утра,alarm_set,1,alarm_set,1,alarm_set,1,alarm_set,1
+285,topic3_unseen_daily,9934,cooking_recipe,что приготовить из броколли и курицы,cooking_recipe,1,cook_recipe,0,cook_recipe,0,cook_recipe,0
+286,topic3_unseen_daily,10090,cooking_recipe,найди рецепт приготовления трески,cooking_recipe,1,cook_trout_recipe,0,cook_trout_recipe,0,cook_trout_recipe,0
+287,topic3_unseen_daily,1625,alarm_query,утра или вечера,alarm_query,1,alarm_query,1,alarm_query,1,alarm_query,1
+288,topic3_unseen_daily,63,alarm_query,расскажи мне о моих будильниках,alarm_query,1,alarm_query,1,alarm_query,1,alarm_query,1
+289,topic3_unseen_daily,610,alarm_set,я хочу встать в шесть утра завтра пожалуйста,alarm_set,1,alarm_set,1,alarm_set,1,alarm_set,1
+290,topic3_unseen_daily,12581,transport_query,когда сегодня отправляется поезд,transport_query,1,transport_query,1,transport_query,1,transport_query,1
+291,topic3_unseen_daily,4145,alarm_query,какие будильники я поставил сегодня,alarm_query,1,alarm_query,1,alarm_query,1,alarm_query,1
+292,topic3_unseen_daily,4339,takeaway_order,открой интернет,transport_query,0,transport_query,0,transport_query,0,transport_query,0
+293,topic3_unseen_daily,5570,takeaway_order,найди еду и закажи,takeaway_order,1,takeaway_order,1,takeaway_order,1,takeaway_order,1
+294,topic3_unseen_daily,1750,iot_hue_lightoff,выключи весь свет,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1
+295,topic3_unseen_daily,10027,cooking_recipe,инструкции для приготовления еды,cooking_recipe,1,cook_recipe,0,cook_recipe,0,cook_recipe,0
+296,topic3_unseen_daily,232,alarm_set,поставь будильник на шесть утра,alarm_set,1,alarm_set,1,alarm_set,1,alarm_set,1
+297,topic3_unseen_daily,3242,alarm_set,можешь поставить будильник на тринадцать часов,alarm_set,1,alarm_set,1,alarm_set,1,alarm_set,1
+298,topic3_unseen_daily,10125,cooking_recipe,чем отличается запекание от жарки под грилем,запекание - это процесс приготовления пищи в духовке,0,cooking_recipe,1,cooking_recipe,1,cooking_recipe,1
+299,topic3_unseen_daily,651,iot_hue_lightoff,выключи свет в комнате,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1,iot_hue_lightoff,1

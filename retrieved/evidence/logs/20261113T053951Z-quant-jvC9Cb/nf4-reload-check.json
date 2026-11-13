@@ -1,0 +1,13 @@
+{
+  "nf4_dir": "artifacts/nf4",
+  "is_loaded_in_4bit": true,
+  "linear4bit_module_count": 196,
+  "quant_types_found": [
+    "nf4"
+  ],
+  "has_peft_wrapper": false,
+  "tokenizer_matches_base": true,
+  "disk_bytes": 1154754533,
+  "cuda_allocated_mib": 1090.43
+}
+[OK] NF4 reload verification PASSED.

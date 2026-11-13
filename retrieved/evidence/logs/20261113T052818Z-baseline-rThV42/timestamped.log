@@ -1,0 +1,22 @@
+2026-11-13T05:28:50Z [transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+2026-11-13T05:28:50Z Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:00<05:10,  1.08it/s]Loading weights:  26%|██▋       | 89/338 [00:01<00:02, 116.38it/s]Loading weights:  40%|███▉      | 134/338 [00:01<00:01, 144.28it/s]Loading weights:  50%|█████     | 169/338 [00:01<00:01, 154.52it/s]Loading weights:  58%|█████▊    | 197/338 [00:01<00:00, 143.89it/s]Loading weights:  65%|██████▌   | 220/338 [00:01<00:00, 157.56it/s]Loading weights:  72%|███████▏  | 243/338 [00:01<00:00, 161.45it/s]Loading weights:  79%|███████▉  | 267/338 [00:02<00:00, 168.87it/s]Loading weights:  86%|████████▌ | 291/338 [00:02<00:00, 172.34it/s]Loading weights:  93%|█████████▎| 315/338 [00:02<00:00, 179.64it/s]Loading weights: 100%|██████████| 338/338 [00:02<00:00, 142.39it/s]
+2026-11-13T05:28:50Z {
+2026-11-13T05:28:50Z   "artifact": "base_dev",
+2026-11-13T05:28:50Z   "model_dir": "base_snapshot",
+2026-11-13T05:28:50Z   "n": 100,
+2026-11-13T05:28:50Z   "exact_match": 0.62,
+2026-11-13T05:28:50Z   "valid_format_rate": 0.93,
+2026-11-13T05:28:50Z   "macro_f1": 0.619726,
+2026-11-13T05:28:50Z   "errors_by_expected_class": {
+2026-11-13T05:28:50Z     "qa_factoid": 8,
+2026-11-13T05:28:50Z     "email_sendemail": 3,
+2026-11-13T05:28:50Z     "news_query": 2,
+2026-11-13T05:28:50Z     "play_radio": 4,
+2026-11-13T05:28:50Z     "calendar_set": 5,
+2026-11-13T05:28:50Z     "datetime_query": 5,
+2026-11-13T05:28:50Z     "play_music": 1,
+2026-11-13T05:28:50Z     "weather_query": 1,
+2026-11-13T05:28:50Z     "email_query": 3,
+2026-11-13T05:28:50Z     "general_quirky": 6
+2026-11-13T05:28:50Z   }
+2026-11-13T05:28:50Z }

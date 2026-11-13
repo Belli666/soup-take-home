@@ -1,0 +1,103 @@
+{
+  "metadata": {
+    "model_type": "qwen2",
+    "total_base_parameters": 1543656960,
+    "total_lora_parameters": 18464768,
+    "lora_rank": 16,
+    "batch_size": 1,
+    "seq_len": 2048,
+    "base_dtype": "int4",
+    "lora_dtype": "fp32",
+    "optimizer_type": "adamw_fp32",
+    "gradient_checkpointing": true,
+    "vocab_size": 151936
+  },
+  "training_breakdown": {
+    "base_model_weights": {
+      "bytes": 910757606,
+      "MB": 910.76,
+      "MiB": 868.57,
+      "GB": 0.911,
+      "GiB": 0.848
+    },
+    "lora_adapter_weights": {
+      "bytes": 73859072,
+      "MB": 73.86,
+      "MiB": 70.44,
+      "GB": 0.074,
+      "GiB": 0.069
+    },
+    "lora_gradients": {
+      "bytes": 73859072,
+      "MB": 73.86,
+      "MiB": 70.44,
+      "GB": 0.074,
+      "GiB": 0.069
+    },
+    "optimizer_states": {
+      "bytes": 147718144,
+      "MB": 147.72,
+      "MiB": 140.88,
+      "GB": 0.148,
+      "GiB": 0.138
+    },
+    "activations": {
+      "bytes": 408944640,
+      "MB": 408.94,
+      "MiB": 390.0,
+      "GB": 0.409,
+      "GiB": 0.381
+    },
+    "logits_cross_entropy_peak": {
+      "bytes": 1244659712,
+      "MB": 1244.66,
+      "MiB": 1187.0,
+      "GB": 1.245,
+      "GiB": 1.159
+    },
+    "total_training_allocated_peak": {
+      "bytes": 2859798246,
+      "MB": 2859.8,
+      "MiB": 2727.32,
+      "GB": 2.86,
+      "GiB": 2.663
+    }
+  },
+  "merge_breakdown": {
+    "base_fp16_weights": {
+      "bytes": 3087313920,
+      "MB": 3087.31,
+      "MiB": 2944.29,
+      "GB": 3.087,
+      "GiB": 2.875
+    },
+    "gpu_merge_inplace_peak": {
+      "bytes": 3161172992,
+      "MB": 3161.17,
+      "MiB": 3014.73,
+      "GB": 3.161,
+      "GiB": 2.944
+    },
+    "gpu_merge_peak_with_copy": {
+      "bytes": 6248486912,
+      "MB": 6248.49,
+      "MiB": 5959.02,
+      "GB": 6.248,
+      "GiB": 5.819
+    }
+  },
+  "quantization_breakdown": {
+    "quantization_peak": {
+      "bytes": 3871725312,
+      "MB": 3871.73,
+      "MiB": 3692.36,
+      "GB": 3.872,
+      "GiB": 3.606
+    }
+  },
+  "notes": {
+    "cuda_allocator_overhead": "PyTorch Caching Allocator reserves blocks in advance (memory_reserved > memory_allocated). Usually adds 500MB - 1.5GB to nvidia-smi.",
+    "cuda_context_overhead": "CUDA runtime context and cuBLAS workspace take ~400MB - 700MB VRAM before any tensor is allocated.",
+    "qwen_logits_trap": "Qwen vocab size is 151936. At seq_len=2048, logits alone take 1187.0 MiB in FP32."
+  }
+}

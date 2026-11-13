@@ -1,0 +1,37 @@
+# Конфигурация обучения для soup-cli (FP16 LoRA, оптимизировано под Google Colab T4 16 GB)
+base: ./base_snapshot          # Локальная директория базовой модели (пинуется по commit SHA в prepare_data.py)
+task: sft                      # Режим Supervised Fine-Tuning (дообучение на диалогах)
+backend: transformers          # Исполняющий движок HuggingFace Transformers + PEFT + TRL
+output: ./artifacts/adapter    # Куда сохраняются обученные LoRA-матрицы A и B (~8.4 MB)
+
+data:
+  train: ./data/train.jsonl
+  format: chatml               # Формат сообщений [{"role": ..., "content": ...}]
+  val_split: 0.0               # Валидацию делаем отдельно на изолированных dev/test сплитах без утечек
+  max_length: 512              # Максимальная длина контекста; аудит показал max=257 токенов (0 обрезаний)
+  streaming: false             # Датасет маленький (1200 строк), полностью помещается в RAM
+  train_on_responses_only: true # Считаем loss только по ответу ассистента (коду класса), системный промпт маскируется
+
+training:
+  quantization: none           # База загружается в честном FP16 (~2.87 GiB), без QLoRA — это чище для merge
+  stream_layers: false
+  gradient_checkpointing: true # Пересчёт активаций на backward вместо хранения в VRAM (экономит память)
+  packing: false               # Каждый диалог идёт отдельно без склейки, чтобы границы примеров не смешивались
+  fast_lora: false
+  use_flash_attn: false        # Tesla T4 (архитектура Turing sm_75) не поддерживает FlashAttention-2
+  train_on_eot: true           # Обязательно обучаем токен конца ответа (<|im_end|>), чтобы модель вовремя останавливалась
+  batch_size: 1                # Микробатч = 1: минимальный пик VRAM на T4
+  gradient_accumulation_steps: 8 # Эффективный батч = 1 × 8 = 8 примеров на один шаг оптимизатора (1200 / 8 = 150 шагов)
+  epochs: 1                    # 1 эпоха на 1200 примерах (быстро и без сильного переобучения)
+  lr: 0.0002                   # Скорость обучения 2e-4 (стандарт для LoRA)
+  optimizer: adamw_torch
+  seed: 42                     # Фиксированный seed для воспроизводимости
+  logging_steps: 10
+  save_steps: 50
+  lora:
+    r: 16                      # Ранг матриц LoRA (размер узкого горлышка B×A)
+    alpha: 32                  # Коэффициент масштабирования (delta W = (alpha / r) * B @ A = 2 * B @ A)
+    dropout: 0.05
+    target_modules:            # Обучаем только проекции Query и Value в механизме внимания (2.18M параметров = 0.14% модели)
+      - q_proj
+      - v_proj

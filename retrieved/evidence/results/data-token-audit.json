@@ -1,0 +1,32 @@
+{
+  "model_dir": "base_snapshot",
+  "max_length": 512,
+  "train_full_tokens": {
+    "count": 1200,
+    "min": 206,
+    "p50": 217,
+    "p95": 229,
+    "p99": 238,
+    "max": 257,
+    "truncated_at_max_length": 0
+  },
+  "train_response_tokens": {
+    "count": 1200,
+    "min": 4,
+    "p50": 4,
+    "p95": 6,
+    "p99": 6,
+    "max": 6,
+    "truncated_at_max_length": 0
+  },
+  "dev_prompt_tokens": {
+    "count": 100,
+    "min": 204,
+    "p50": 213,
+    "p95": 227,
+    "p99": 233,
+    "max": 236,
+    "truncated_at_max_length": 0
+  },
+  "total_supervised_tokens_in_train": 5200
+}

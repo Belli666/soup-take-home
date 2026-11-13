@@ -1,0 +1,22 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:00<05:10,  1.08it/s]Loading weights:  26%|██▋       | 89/338 [00:01<00:02, 116.38it/s]Loading weights:  40%|███▉      | 134/338 [00:01<00:01, 144.28it/s]Loading weights:  50%|█████     | 169/338 [00:01<00:01, 154.52it/s]Loading weights:  58%|█████▊    | 197/338 [00:01<00:00, 143.89it/s]Loading weights:  65%|██████▌   | 220/338 [00:01<00:00, 157.56it/s]Loading weights:  72%|███████▏  | 243/338 [00:01<00:00, 161.45it/s]Loading weights:  79%|███████▉  | 267/338 [00:02<00:00, 168.87it/s]Loading weights:  86%|████████▌ | 291/338 [00:02<00:00, 172.34it/s]Loading weights:  93%|█████████▎| 315/338 [00:02<00:00, 179.64it/s]Loading weights: 100%|██████████| 338/338 [00:02<00:00, 142.39it/s]
+{
+  "artifact": "base_dev",
+  "model_dir": "base_snapshot",
+  "n": 100,
+  "exact_match": 0.62,
+  "valid_format_rate": 0.93,
+  "macro_f1": 0.619726,
+  "errors_by_expected_class": {
+    "qa_factoid": 8,
+    "email_sendemail": 3,
+    "news_query": 2,
+    "play_radio": 4,
+    "calendar_set": 5,
+    "datetime_query": 5,
+    "play_music": 1,
+    "weather_query": 1,
+    "email_query": 3,
+    "general_quirky": 6
+  }
+}

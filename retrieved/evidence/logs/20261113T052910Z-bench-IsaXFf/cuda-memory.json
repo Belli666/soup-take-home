@@ -1,0 +1,26 @@
+{
+  "argv": [
+    "soup",
+    "bench",
+    "train",
+    "--config",
+    "soup.yaml",
+    "--steps",
+    "20",
+    "--warmup",
+    "3",
+    "--output",
+    "/content/soup_takehome/logs/20261113T052910Z-bench-IsaXFf/bench-train.json"
+  ],
+  "elapsed_sec": 82.071,
+  "exit_code": 0,
+  "exception": null,
+  "cuda_available": true,
+  "device_name": "Tesla T4",
+  "max_memory_allocated_bytes": 3693266944,
+  "max_memory_allocated_mib": 3522.17,
+  "max_memory_allocated_gib": 3.4396,
+  "max_memory_reserved_bytes": 5358223360,
+  "max_memory_reserved_mib": 5110.0,
+  "max_memory_reserved_gib": 4.9902
+}

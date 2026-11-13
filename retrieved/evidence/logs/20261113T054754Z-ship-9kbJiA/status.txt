@@ -1,0 +1,5 @@
+started_utc=2026-11-13T05:47:54Z
+phase=ship
+ended_utc=2026-11-13T06:03:51Z
+phase_exit=0
+pipeline_codes=0 0 0 0

@@ -1,0 +1,135 @@
+{
+  "mode": "full",
+  "adapter_activity": {
+    "status": "PASSED",
+    "lora_pair_count": 56,
+    "nonzero_delta_layers": 56,
+    "delta_norm_stats": {
+      "count": 56,
+      "median": 0.26740606129169464,
+      "p95": 0.4632852002978325,
+      "max": 0.5267865061759949,
+      "mean": 0.2902349507702248
+    },
+    "on_off_logprob_diff": {
+      "count": 134,
+      "median": 0.0011457181026344188,
+      "p95": 1.2622512556612484,
+      "max": 13.004950642585754,
+      "mean": 0.31749286603155213
+    },
+    "repeat_noise_diff": {
+      "count": 134,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "mean": 0.0
+    },
+    "zero_b_noop_diff": {
+      "count": 134,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "mean": 0.0
+    },
+    "noise_floor": 1e-06
+  },
+  "merge_parity": {
+    "status": "PASSED",
+    "median_tol": 0.01,
+    "p95_tol": 0.05,
+    "logprob_abs_diff": {
+      "count": 134,
+      "median": 4.5886990847066045e-06,
+      "p95": 0.003625198453664779,
+      "max": 0.030550718307495117,
+      "mean": 0.0009497452168156386
+    },
+    "greedy_token_agreement": 1.0,
+    "first_mismatches": []
+  },
+  "artifacts": {
+    "base": {
+      "artifact": "base",
+      "model_dir": "base_snapshot",
+      "n": 264,
+      "exact_match": 0.579545,
+      "valid_format_rate": 0.867424,
+      "macro_f1": 0.595189,
+      "errors_by_expected_class": {
+        "qa_factoid": 21,
+        "calendar_set": 14,
+        "general_quirky": 18,
+        "datetime_query": 11,
+        "news_query": 6,
+        "email_query": 6,
+        "play_music": 9,
+        "email_sendemail": 13,
+        "play_radio": 6,
+        "weather_query": 4,
+        "calendar_query": 2,
+        "calendar_remove": 1
+      }
+    },
+    "merged": {
+      "artifact": "merged",
+      "model_dir": "artifacts/merged",
+      "n": 264,
+      "exact_match": 0.844697,
+      "valid_format_rate": 0.981061,
+      "macro_f1": 0.856225,
+      "errors_by_expected_class": {
+        "qa_factoid": 9,
+        "calendar_set": 2,
+        "general_quirky": 7,
+        "news_query": 3,
+        "email_query": 4,
+        "datetime_query": 3,
+        "play_radio": 2,
+        "play_music": 5,
+        "weather_query": 2,
+        "email_sendemail": 2,
+        "calendar_remove": 1,
+        "calendar_query": 1
+      }
+    },
+    "nf4": {
+      "artifact": "nf4",
+      "model_dir": "artifacts/nf4",
+      "n": 264,
+      "exact_match": 0.80303,
+      "valid_format_rate": 0.996212,
+      "macro_f1": 0.816519,
+      "errors_by_expected_class": {
+        "qa_factoid": 15,
+        "calendar_set": 1,
+        "general_quirky": 3,
+        "news_query": 5,
+        "play_music": 7,
+        "calendar_query": 3,
+        "email_query": 4,
+        "datetime_query": 4,
+        "play_radio": 2,
+        "weather_query": 5,
+        "email_sendemail": 2,
+        "calendar_remove": 1
+      }
+    }
+  },
+  "paired_bootstrap_95ci": {
+    "merged_minus_base": {
+      "mean_diff": 0.26515151515151514,
+      "ci95_low": 0.21212121212121213,
+      "ci95_high": 0.3181818181818182,
+      "n": 264,
+      "n_resamples": 5000
+    },
+    "nf4_minus_merged": {
+      "mean_diff": -0.041666666666666664,
+      "ci95_low": -0.07954545454545454,
+      "ci95_high": -0.011363636363636364,
+      "n": 264,
+      "n_resamples": 5000
+    }
+  }
+}

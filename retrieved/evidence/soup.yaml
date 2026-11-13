@@ -1,0 +1,36 @@
+base: ./base_snapshot
+task: sft
+backend: transformers
+output: ./artifacts/adapter
+
+data:
+  train: ./data/train.jsonl
+  format: chatml
+  val_split: 0.0
+  max_length: 512
+  streaming: false
+  train_on_responses_only: true
+
+training:
+  quantization: none
+  stream_layers: false
+  gradient_checkpointing: true
+  packing: false
+  fast_lora: false
+  use_flash_attn: false
+  train_on_eot: true
+  batch_size: 1
+  gradient_accumulation_steps: 8
+  epochs: 1
+  lr: 0.0002
+  optimizer: adamw_torch
+  seed: 42
+  logging_steps: 10
+  save_steps: 50
+  lora:
+    r: 16
+    alpha: 32
+    dropout: 0.05
+    target_modules:
+      - q_proj
+      - v_proj

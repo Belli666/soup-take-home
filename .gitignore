@@ -1,0 +1,17 @@
+# Временные архивы и кеши
+*.tar.gz
+*.pyc
+__pycache__/
+*:Zone.Identifier
+local-logs/
+
+# Крупные локально скачанные модели/сырой датасет (если появятся в корне)
+base_snapshot/
+artifacts/merged/
+artifacts/nf4/
+data/raw/
+
+# Дубли кода и тяжёлые временные пробы внутри распакованного архива доказательств
+retrieved/evidence/scripts/__pycache__/
+retrieved/evidence/logs/*/probes/zero_b_adapter/
+retrieved/evidence/logs/*/probes/train-*.jsonl
