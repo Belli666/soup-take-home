@@ -533,8 +533,15 @@ def main() -> None:
         s = report["artifacts"][k]
         print(f"{k:<10} n={s['n']}  EM={s['exact_match']:.4f}  valid={s['valid_format_rate']:.4f}  macro_F1={s['macro_f1']:.4f}")
     if args.mode == "full":
-        print(f"adapter_activity: {report['adapter_activity']['status']}")
-        print(f"merge_parity:     {report['merge_parity']['status']}")
+        act_status = report["adapter_activity"]["status"]
+        mp_status = report["merge_parity"]["status"]
+        print(f"adapter_activity: {act_status}")
+        print(f"merge_parity:     {mp_status}")
+        # Не даём --mode full завершиться с exit 0, если провалена активность адаптера или паритет склейки
+        if act_status != "PASSED":
+            sys.exit(2)
+        if mp_status != "PASSED":
+            sys.exit(3)
 
 
 if __name__ == "__main__":

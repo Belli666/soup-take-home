@@ -124,21 +124,28 @@ def build_blind_dataset(
     dev_path: Path,
     out_path: Path,
     seed: int = 42,
+    test_path: Path | None = None,
 ) -> List[Dict[str, Any]]:
     """
     Формирует слепую выборку из 300 примеров (3 темы × 100) с жёсткой защитой от утечек:
-    любая нормализованная фраза, встречавшаяся в train.jsonl или dev.jsonl, полностью исключается.
+    любая нормализованная фраза пользователя (role == 'user'), встречавшаяся в train, dev или test,
+    полностью исключается.
     """
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     trained_prompt = manifest["system_prompt"]
     trained_intents = list(manifest["selected_intents"])
 
-    # Собираем чёрный список всех текстов из train и dev
+    # Собираем чёрный список именно пользовательских реплик (role == "user"),
+    # а не messages[-1] (в train.jsonl последним сообщением идёт ответ assistant с меткой класса).
     forbidden_texts: Set[str] = set()
-    for p in (train_path, dev_path):
+    exclusion_paths = [train_path, dev_path]
+    if test_path is not None and test_path.exists():
+        exclusion_paths.append(test_path)
+    for p in exclusion_paths:
         for r in load_jsonl(p):
-            user_txt = r["messages"][-1]["content"]
-            forbidden_texts.add(normalize_text(user_txt))
+            for msg in r.get("messages", []):
+                if msg.get("role") == "user":
+                    forbidden_texts.add(normalize_text(msg["content"]))
 
     # Приоритет отдаём строкам из test/dev-разделов исходного MASSIVE, добирая при необходимости из остальных
     raw_rows = load_jsonl(ru_jsonl_path)
@@ -276,16 +283,10 @@ def evaluate_loaded_model(
             )
             new_ids = gen_out[0, prompt_len:].tolist()
             raw = tokenizer.decode(new_ids, skip_special_tokens=True).strip()
-            first_line = raw.splitlines()[0].strip() if raw else ""
-            cleaned = first_line.strip("`\"'.,:; ")
-            allowed = set(ex["allowed_labels"])
-            if cleaned not in allowed:
-                for lbl in sorted(allowed, key=len, reverse=True):
-                    if lbl in first_line:
-                        cleaned = lbl
-                        break
+            # Строгое сравнение сырого ответа (без подстрочного спасения, чтобы совпадало с verify.py)
+            cleaned = raw
 
-            valid = cleaned in allowed
+            valid = cleaned in set(ex["allowed_labels"])
             em = cleaned == ex["expected"]
             # Проверяем, не пытается ли дообученная модель на новой теме по привычке выдать старый класс из обучения
             leaked_old = (not ex["is_trained_topic"]) and (cleaned in trained_labels)
@@ -311,6 +312,7 @@ def main() -> None:
     parser.add_argument("--manifest", default="data/manifest.json")
     parser.add_argument("--train-jsonl", default="data/train.jsonl")
     parser.add_argument("--dev-jsonl", default="data/dev.jsonl")
+    parser.add_argument("--test-jsonl", default="data/test.jsonl")
     parser.add_argument("--dataset-out", default="data/blind-300.jsonl")
     parser.add_argument("--paired-jsonl", default="results/blind-300-paired.jsonl")
     parser.add_argument("--paired-csv", default="results/blind-300-paired.csv")
@@ -325,6 +327,7 @@ def main() -> None:
         manifest_path=Path(args.manifest),
         train_path=Path(args.train_jsonl),
         dev_path=Path(args.dev_jsonl),
+        test_path=Path(args.test_jsonl),
         out_path=Path(args.dataset_out),
         seed=42,
     )
